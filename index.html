@@ -6,43 +6,90 @@
   <title>Apland</title>
 
   <style>
-    div, p, h1 {
-      background-color: aqua;
+    * {
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    span, a, strong {
-      background-color: blueviolet;
+    .header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: blue;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: blue;
     }
 
     button {
-      background-color: green;
+      border: solid 1px blue;
+      border-radius: 20px;
+      color: white;
+      padding: 20px;
+      background-color: blue;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    button:hover{
+      background-color: white;
+      color: blue;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .web {
+      color: red;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .textos {
+      display: flex;
+      flex-direction: column;
     }
   </style>
 </head>
 <body>
-  <!-- Display block -->
-  <div style="width: 50%; text-align: center;">Display block</div>
-  <p style="text-align: center;">Display block</p>
-  <h1>Display block</h1>
-
-  <!-- Display inline -->
-  <span style="width: 50%;">Display inline</span>
-  <a href="">Display inline</a>
-  <strong>Display inline</strong>
-
-  <!-- Display inline-block -->
-  <button style="width: 30%;">Botão</button>
-  <button style="width: 30%;">Botão</button>
-
-  <div style="width: 50%;">
-    <span>Texto</span>
-  </div>
-
-  <div style="display: none;">Elemento visivel</div>
-
-  <img src="https://media.tenor.com/mtiOW6O-k8YAAAAM/shrek-shrek-rizz.gif" alt="">
-  <img src="https://i.pinimg.com/originals/25/30/1c/25301cf8f8a7d195768ddd23d701e270.gif" alt="">
-  <img src="https://gifdb.com/images/high/shrek-meme-who-knows-holding-laugh-reaction-l1z0jlgem3o9qn2j.gif" alt="">
-  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c5ae195f-e639-4f3e-87e0-6199d10d2fb9/dgjsmno-f9eb289b-9a48-48da-b7ab-2ed874eb2bd1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M1YWUxOTVmLWU2MzktNGYzZS04N2UwLTYxOTlkMTBkMmZiOVwvZGdqc21uby1mOWViMjg5Yi05YTQ4LTQ4ZGEtYjdhYi0yZWQ4NzRlYjJiZDEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZEzVvNIG6-KIcl-Hpsqghv8Jo5nfZdpGFUol-XuNvKE" alt="">
+  <header class="header">
+    <h1 class="logo">APLAND</h1>
+    <nav class="nav">
+      <a>Home</a>
+      <a>Features</a>
+      <a>Pages</a>
+      <a>Download</a>
+      <a>Blog</a>
+      <a>Contact</a>
+      <a><button>Sign Up</button></a>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="textos">
+      <p>New updated version 5.1.2</p>
+      <h2>A creative landing page for your creative <span style="color: red;">webs</span></h2>
+      <br>
+      <p>Apland is a completely <span style="color: blue;">creative, <br> lightweight, clean & super responsive</span> app landing page. <br> It's built with the latest technology & comes <br> with <span style="color: blue;">dark mode.</span></p>
+    </div>
+    <img src="foto1.png" alt="">
+  </main>
 </body>
 </html>
